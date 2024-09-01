@@ -1,0 +1,39 @@
+.kategori_liste {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+
+.produkt > * {
+  margin: 0;
+}
+
+.productlist article .discounted {
+  display: none;
+}
+
+.productlist article.onSale .discounted {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 600px) {
+  .kategori_liste {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .productlist main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+
+  .productlist main h2 {
+    grid-column: span 2;
+  }
+
+  .product_information {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+}

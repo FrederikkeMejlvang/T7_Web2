@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  color: #3e523d;
+  font-family: Oswald;
+  line-height: 200%;
+}
+
+body {
+  margin: 7%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+}
+
+a:link {
+  color: #162114;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+a.kategori {
+  padding: 24px 24px;
+  padding: 2em;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.productlist article.soldOut {
+  opacity: 0.5;
+}
+
+.smallProduct {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+p.subtle {
+  color: #777677;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(Oswald/Oswald-VariableFont_wght.ttf);
+}
