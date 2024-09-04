@@ -1,8 +1,8 @@
 * {
   box-sizing: border-box;
-  color: #3e523d;
+  color: #eb3d00;
   font-family: Oswald;
-  line-height: 200%;
+  background-color: #f6f5f1;
 }
 
 body {
@@ -13,20 +13,73 @@ img {
   display: block;
   max-width: 100%;
   max-height: auto;
+  border-radius: 10px;
+}
+
+h2.category {
+  font-size: 48px;
 }
 
 a:link {
-  color: #162114;
+  color: #eb3d00;
   text-decoration: none;
   font-size: 16px;
   font-weight: lighter;
 }
 
-a.category {
-  padding: 24px 24px;
-  padding: 2em;
-  background-color: aliceblue;
-  border-radius: 5px;
+ol li {
+  padding: 2em 3em;
+  border: 1px solid;
+  border-color: #eb3d00;
+  border-radius: 40px;
+  list-style-type: none;
+  text-align: center;
+}
+
+a.read_more {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  border-color: #eb3d00;
+  border: 1px solid;
+  padding: 1rem 2rem;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+ul.breadcrumbs {
+  padding: 10px 16px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+ul.breadcrumbs li {
+  display: inline;
+}
+
+ul.breadcrumbs li + li:before {
+  padding: 8px;
+  color: #eb3d00;
+  content: "/\00a0";
+}
+
+dl {
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.purchaseBox {
+  font-weight: 300;
+  line-height: 200%;
+  border: 1px solid;
+  padding: 1rem;
+  border-radius: 10px;
+  height: fit-content;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
 }
 
 .productlist article.soldOut img {
@@ -47,6 +100,12 @@ h3 {
 p.subtle {
   color: #777677;
   font-weight: 100;
+}
+
+@media (max-width: 800px) {
+  .purchaseBox {
+    margin-top: 20px;
+  }
 }
 
 @font-face {

@@ -1,7 +1,7 @@
-#categoryList {
+ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1em;
+  gap: 1rem;
 }
 
 .produkt > * {
@@ -17,15 +17,15 @@
   justify-content: space-between;
 }
 
-@media (min-width: 600px) {
-  #categoryList {
+@media (min-width: 800px) {
+  ol {
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 6rem;
+    gap: 1rem;
   }
   .productlist main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 6rem;
+    gap: 2rem;
   }
 
   .productlist main h2 {
@@ -41,6 +41,6 @@
   .grid1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6rem;
+    gap: 3rem;
   }
 }

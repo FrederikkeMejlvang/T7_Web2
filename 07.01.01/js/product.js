@@ -17,4 +17,6 @@ function showProduct(product) {
   document.querySelector("dd.name").textContent = product.productdisplayname;
   document.querySelector("dd.brand").textContent = product.brandname;
   document.querySelector("dd.id").textContent = product.id;
+  document.querySelector("li.item").textContent = product.productdisplayname;
+  document.querySelector("li.cat").textContent = product.category;
 }
