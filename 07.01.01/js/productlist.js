@@ -38,8 +38,12 @@ function showProduct(product) {
     copy.querySelector("article").classList.add("soldOut");
   }
   //hvis produktet er på tilbud
-  if (product.dicounted) {
+  if (product.discount) {
     copy.querySelector("article").classList.add("onSale");
+    copy.querySelector("p.now").textContent = `Now DKK ${Math.round(
+      product.price - (product.price * product.discount) / 100
+    )},-`;
+    copy.querySelector("p.percentage").textContent = `${product.discount}%`;
   }
   copy
     .querySelector(".read_more")

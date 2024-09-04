@@ -29,7 +29,7 @@ a.category {
   border-radius: 5px;
 }
 
-.productlist article.soldOut {
+.productlist article.soldOut img {
   opacity: 0.5;
 }
 
