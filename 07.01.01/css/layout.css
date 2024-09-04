@@ -1,4 +1,4 @@
-.kategori_liste {
+#categoryList {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1em;
@@ -18,20 +18,27 @@
 }
 
 @media (min-width: 600px) {
-  .kategori_liste {
+  #categoryList {
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 6rem;
   }
   .productlist main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6rem;
+  }
+
+  .productlist main h2 {
+    grid-column: span 3;
+  }
+
+  .product_information {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
   }
 
-  .productlist main h2 {
-    grid-column: span 2;
-  }
-
-  .product_information {
+  .grid1_1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
